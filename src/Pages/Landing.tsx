@@ -1,9 +1,10 @@
 import type { JSX } from "react";
+import { Header } from "@Landing/Header";
 
 export const LandingPage = (): JSX.Element => {
   return (
-    <div>
-      <p>landing page</p>
+    <div className="min-h-screen">
+      <Header />
     </div>
   );
 };
