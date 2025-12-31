@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@Pages": "/src/Pages",
+      "@Landing": "/src/Landing",
     },
   },
 });

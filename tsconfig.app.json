@@ -25,7 +25,8 @@
     "noUncheckedSideEffectImports": true,
 
     "paths": {
-      "@Pages/*": ["./src/Pages/*"]
+      "@Pages/*": ["./src/Pages/*"],
+      "@Landing/*": ["./src/Landing/*"]
     }
   },
   "include": ["src"]
