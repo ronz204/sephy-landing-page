@@ -2,7 +2,6 @@ import type { JSX } from "react";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Links } from "@Components/Atoms/Links";
-import { Contact } from "@Components/Atoms/Contact";
 
 export const Header = (): JSX.Element => {
   const sections: string[] = ["Soluciones", "Proceso", "Casos de Uso"];
@@ -29,9 +28,9 @@ export const Header = (): JSX.Element => {
           <Links isMobile={false} sections={sections} />
         </div>
 
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
+        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
           <Contact isMobile={false} />
-        </div>
+        </div> */}
 
       </nav>
 
@@ -39,7 +38,7 @@ export const Header = (): JSX.Element => {
         <div className="lg:hidden">
           <div className="space-y-1 px-6 pb-6 pt-2">
             <Links isMobile={true} sections={sections} />
-            <Contact isMobile={true} />
+            {/* <Contact isMobile={true} /> */}
           </div>
         </div>
       )}
