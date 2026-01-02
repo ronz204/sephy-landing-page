@@ -38,6 +38,7 @@ export const Stats = (): JSX.Element => {
               <div key={stat.label} className="flex flex-col items-center text-center group">
                 <div className="mb-4 rounded-xl bg-linear-to-br from-gray-100
                    to-gray-50 p-3 transition-all group-hover:from-gray-900 group-hover:to-gray-800">
+                    
                   <Icon className="h-6 w-6 text-gray-700 group-hover:text-white transition-colors" />
                 </div>
                 <p className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{stat.value}</p>

@@ -67,8 +67,10 @@ export const Solutions = (): JSX.Element => {
               <div key={solution.title}
                 className="group overflow-hidden rounded-xl border border-gray-200 bg-white p-6
                  transition-all hover:border-gray-900 hover:shadow-xl hover:-translate-y-1">
+
                 <div className="mb-4 inline-flex rounded-lg bg-linear-to-br from-gray-100 to-gray-50
                    p-3 transition-all group-hover:from-gray-900 group-hover:to-gray-800">
+                    
                   <Icon className="h-6 w-6 text-gray-700 group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900">{solution.title}</h3>
