@@ -26,7 +26,8 @@
 
     "paths": {
       "@Pages/*": ["./src/Pages/*"],
-      "@Landing/*": ["./src/Landing/*"]
+      "@Landing/*": ["./src/Landing/*"],
+      "@Components/*": ["./src/Components/*"]
     }
   },
   "include": ["src"]
