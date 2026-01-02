@@ -3,8 +3,9 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Links } from "@Components/Atoms/Links";
 
+const sections: string[] = ["Soluciones", "Proceso", "Casos de Uso"];
+
 export const Header = (): JSX.Element => {
-  const sections: string[] = ["Soluciones", "Proceso", "Casos de Uso"];
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
