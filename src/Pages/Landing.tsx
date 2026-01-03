@@ -2,6 +2,7 @@ import type { JSX } from "react";
 import { Hero } from "@Landing/Hero";
 import { Stats } from "@Landing/Stats";
 import { Header } from "@Landing/Header";
+import { Process } from "@Landing/Process";
 import { Solutions } from "@Landing/Solutions";
 
 export const LandingPage = (): JSX.Element => {
@@ -11,6 +12,7 @@ export const LandingPage = (): JSX.Element => {
       <Hero />
       <Stats />
       <Solutions />
+      <Process />
     </div>
   );
 };
