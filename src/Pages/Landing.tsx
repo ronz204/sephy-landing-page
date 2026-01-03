@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { CTA } from "@Landing/CTA";
 import { Hero } from "@Landing/Hero";
 import { Stats } from "@Landing/Stats";
 import { Header } from "@Landing/Header";
@@ -13,6 +14,7 @@ export const LandingPage = (): JSX.Element => {
       <Stats />
       <Solutions />
       <Process />
+      <CTA />
     </div>
   );
 };
