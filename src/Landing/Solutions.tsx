@@ -1,53 +1,9 @@
 import type { JSX } from "react";
-import { Bot, Database, Mail, Workflow, Bell, FileText, ShoppingCart, Users } from "lucide-react"
-
-const solutions = [
-  {
-    icon: Workflow,
-    title: "Automatización de Procesos",
-    description: "Conecta tus herramientas y crea flujos de trabajo sin código que se ejecutan automáticamente.",
-  },
-  {
-    icon: Mail,
-    title: "Email Marketing Inteligente",
-    description:
-      "Campañas personalizadas, seguimiento automático y respuestas basadas en el comportamiento del usuario.",
-  },
-  {
-    icon: Database,
-    title: "Integración de Datos",
-    description: "Sincroniza información entre plataformas en tiempo real. CRM, ERP, bases de datos y más.",
-  },
-  {
-    icon: Bot,
-    title: "Chatbots & IA",
-    description: "Asistentes virtuales inteligentes que atienden a tus clientes 24/7 con respuestas naturales.",
-  },
-  {
-    icon: Bell,
-    title: "Notificaciones Automáticas",
-    description: "Alertas inteligentes por Slack, Teams, WhatsApp o email basadas en eventos específicos.",
-  },
-  {
-    icon: FileText,
-    title: "Generación de Reportes",
-    description: "Informes automáticos con datos actualizados. Programa envíos y olvídate del trabajo manual.",
-  },
-  {
-    icon: ShoppingCart,
-    title: "E-commerce Automation",
-    description: "Gestión de inventario, procesamiento de pedidos y seguimiento de envíos automatizados.",
-  },
-  {
-    icon: Users,
-    title: "Onboarding Automatizado",
-    description: "Procesos de incorporación de clientes y empleados completamente automatizados y personalizados.",
-  },
-];
+import { Services } from "@Constants/Services";
 
 export const Solutions = (): JSX.Element => {
   return (
-    <section id="solutions" className="py-24 sm:py-32 bg-gray-50">
+    <section id="solutions" className="py-24 bg-gray-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         <div className="mx-auto max-w-2xl text-center">
@@ -61,7 +17,7 @@ export const Solutions = (): JSX.Element => {
         </div>
 
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
-          {solutions.map((solution) => {
+          {Services.map((solution) => {
             const Icon = solution.icon
             return (
               <div key={solution.title}
