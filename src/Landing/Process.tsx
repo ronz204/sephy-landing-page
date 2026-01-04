@@ -1,31 +1,9 @@
 import type { JSX } from "react";
-
-const steps = [
-  {
-    number: "01",
-    title: "Análisis",
-    description: "Estudiamos tus procesos actuales, identificamos oportunidades de automatización y definimos objetivos claros.",
-  },
-  {
-    number: "02",
-    title: "Diseño",
-    description: "Creamos el blueprint de tu automatización. Flujos visuales, integraciones necesarias y arquitectura técnica.",
-  },
-  {
-    number: "03",
-    title: "Implementación",
-    description: "Desarrollamos y configuramos las automatizaciones en n8n con las mejores prácticas y código limpio.",
-  },
-  {
-    number: "04",
-    title: "Optimización",
-    description: "Monitoreamos rendimiento, ajustamos flujos y te capacitamos para que domines tu nueva infraestructura.",
-  },
-]
+import { Steps } from "@Constants/Steps";
 
 export const Process = (): JSX.Element => {
   return (
-    <section className="bg-gray-50 py-24 sm:py-32">
+    <section id="process" className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         <div className="mx-auto max-w-2xl text-center">
@@ -38,7 +16,7 @@ export const Process = (): JSX.Element => {
         </div>
 
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          {steps.map((step) => (
+          {Steps.map((step) => (
             <div key={step.number} className="relative overflow-hidden rounded-xl border border-gray-200
                bg-white p-8 group hover:border-gray-900 transition-all hover:shadow-xl">
 
