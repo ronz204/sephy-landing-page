@@ -7,7 +7,7 @@ export const Header = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur-lg">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
 
         <div className="flex lg:flex-1">
