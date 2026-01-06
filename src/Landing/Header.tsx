@@ -12,7 +12,7 @@ export const Header = (): JSX.Element => {
 
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="text-2xl font-bold tracking-tight text-gray-900">Sephy</span>
+            <span className="text-2xl font-bold tracking-tight text-gray-900">SephyNex</span>
           </a>
         </div>
 
